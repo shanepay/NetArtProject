@@ -1,30 +1,45 @@
 <html>
 <head>
-<title>Payton's Net Art</title>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+<title>Never</title>
 </head>
 
-<body style="background-color: pink;">
-
-	<h1 style="background-color: hotpink;">I wish it <sup>was</sup> summer</h1>
-	<h2 style="color:rgb(0,23,22)"> 123<sub>4</sub>5</h2>
-	<h6 style="color:green;">payton</h6>
-this is text with out a tag
-
-	<p> This is a paragraph tag </p>
-
-	<h1 style="border:2px solid white;">payton</h1>
-
-	<h3>My name is <blockquote>Payton</blockquote>!</h3>
-
-	<p style="color:red">This is a paragraph tag</p>
+<body style="background-color: white;">
 
 
-<a href="http://www.google.com">This will take you to Google</a>
-</body>
+
+<p>
+
+	<h1 style="text-align:center;"><big>Welcome to the INTERNET</big></h1>
+
+
+
+
 <br>
-<a href="page2.html">Do not click here</a>
-</br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4IRdw_Qgwqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p style="text-align: center;">
+<a href="page3.html">
+	<button>Click here for a SURPRISE!!!!!</button>
+</a>
 
+<a href="page2.html">
+<button>Click here for puppies</button>
+</a>
+
+<a href="fanpage.html"><button>secretbutton;)</button></a>
+</p>
+
+<script type="text/javascript">
+	function setup(){
+		createCanvas(windowWidth,windowHeight); background(300);
+	}
+	function draw(){
+		variableEllipse(mouseX, mouseY, pmouseX, pmouseY);
+	}
+	function variableEllipse(x,y,px,py){
+		let speed = abs(x-px) + abs(y-py); stroke(speed); ellipse(x, y, speed, speed);
+	}
+</script>
+
+</body>
 
 </html>
